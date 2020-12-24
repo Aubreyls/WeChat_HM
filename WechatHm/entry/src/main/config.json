@@ -47,7 +47,8 @@
     "js": [
       {
         "pages": [
-          "pages/index/index"
+          "pages/index/index",
+          "pages/chat/chat"
         ],
         "name": "default",
         "window": {

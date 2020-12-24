@@ -1,5 +1,22 @@
+<element src="../index/item/item.hml">
+
+</element>
+<!-- index.hml -->
 <div class="container">
-    <text class="title">
-        {{ $t('strings.hello') }} {{title}}
-    </text>
+    <list class="todo-wraper" indexer="true" >
+        <list-item for="{{todolist}}" class="todo-item" onclick="clickAction({{$item}})">
+<!--            <div class="todo_child_view" >-->
+<!--                <image class="todo_img" src="{{$item.url}}"></image>-->
+<!--                <div class="todo_container">-->
+<!--                    <text class="todo-name">{{$item.name}}-->
+<!--                    </text>-->
+<!--                    <text class="todo-msg">{{$item.msg}}-->
+<!--                    </text>-->
+<!--                </div>-->
+<!--                <text class="todo-date">{{$item.date}}-->
+<!--                </text>-->
+<!--            </div>-->
+        <item id="{{$item.id}}" name="{{$item.name}}" msg="{{$item.msg}}" date="{{$item.date}}"  url="{{$item.url}}"></item>
+        </list-item>
+    </list>
 </div>
